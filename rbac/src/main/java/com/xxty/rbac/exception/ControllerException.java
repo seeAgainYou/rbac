@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 
 @ControllerAdvice
 @ResponseBody
-public class ControllerException {
+public class ControllerException extends Exception {
     private Logger logger = LoggerFactory.getLogger(ControllerException.class);
 
 //    @ExceptionHandler(ClientTokenException.class)

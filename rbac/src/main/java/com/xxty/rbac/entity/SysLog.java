@@ -1,8 +1,11 @@
 package com.xxty.rbac.entity;
 
+import lombok.Builder;
+
 import java.io.Serializable;
 import java.util.Date;
 
+@Builder
 public class SysLog implements Serializable {
     private Integer id;
 

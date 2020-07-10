@@ -1,8 +1,11 @@
 package com.xxty.rbac.entity;
 
+import lombok.Builder;
+
 import java.io.Serializable;
 import java.util.Date;
 
+@Builder
 public class SysRole implements Serializable {
     /**
      * 角色id

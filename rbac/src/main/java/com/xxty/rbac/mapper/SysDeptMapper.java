@@ -14,4 +14,6 @@ public interface SysDeptMapper {
     int updateByPrimaryKeySelective(SysDept record);
 
     int updateByPrimaryKey(SysDept record);
+
+    int countByNameAndParentId(Integer parentId, String deptName, Integer deptId);
 }

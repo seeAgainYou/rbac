@@ -1,8 +1,8 @@
 package com.xxty.rbac.exception.exception.auth;
 
 
-import com.github.wxiaoqi.security.common.constant.CommonConstants;
-import com.github.wxiaoqi.security.common.exception.BaseException;
+import com.xxty.rbac.common.comstants.CommonConstants;
+import com.xxty.rbac.exception.exception.BaseException;
 
 /**
  * Created by ace on 2017/9/10.

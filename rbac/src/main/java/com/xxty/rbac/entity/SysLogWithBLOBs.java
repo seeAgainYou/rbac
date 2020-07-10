@@ -1,23 +1,15 @@
 package com.xxty.rbac.entity;
 
-import java.io.Serializable;
+import java.util.Date;
 
-public class SysLogWithBLOBs extends SysLog implements Serializable {
-    /**
-     * 旧值
-     *
-     * @mbggenerated
-     */
+public class SysLogWithBLOBs extends SysLog {
     private String oldValue;
 
-    /**
-     * 新值
-     *
-     * @mbggenerated
-     */
     private String newValue;
 
-    private static final long serialVersionUID = 1L;
+    SysLogWithBLOBs(Integer id, Integer type, Integer targetId, String operator, Date operateTime, String operateIp, Integer status) {
+        super(id, type, targetId, operator, operateTime, operateIp, status);
+    }
 
     public String getOldValue() {
         return oldValue;
@@ -33,18 +25,5 @@ public class SysLogWithBLOBs extends SysLog implements Serializable {
 
     public void setNewValue(String newValue) {
         this.newValue = newValue == null ? null : newValue.trim();
-    }
-
-    @Override
-    public String toString() {
-        StringBuilder sb = new StringBuilder();
-        sb.append(getClass().getSimpleName());
-        sb.append(" [");
-        sb.append("Hash = ").append(hashCode());
-        sb.append(", oldValue=").append(oldValue);
-        sb.append(", newValue=").append(newValue);
-        sb.append(", serialVersionUID=").append(serialVersionUID);
-        sb.append("]");
-        return sb.toString();
     }
 }

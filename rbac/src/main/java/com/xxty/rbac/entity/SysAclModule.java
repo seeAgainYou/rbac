@@ -1,8 +1,10 @@
 package com.xxty.rbac.entity;
 
+import lombok.Builder;
+
 import java.io.Serializable;
 import java.util.Date;
-
+@Builder
 public class SysAclModule implements Serializable {
     /**
      * 权限模块id

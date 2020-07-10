@@ -15,6 +15,14 @@ public class ApiResultUtil {
         return new ApiResultVO(ExceptionCodeEnum.SUCCESS.code(), ExceptionCodeEnum.SUCCESS.message(), data);
     }
     /**
+     * 返回成功
+     * @return
+     */
+    public static ApiResultVO setSuccess() {
+        return new ApiResultVO(ExceptionCodeEnum.SUCCESS.code(), ExceptionCodeEnum.SUCCESS.message());
+    }
+
+    /**
      * 返回失败
      * @param codeEnum
      * @return
